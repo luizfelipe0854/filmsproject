@@ -1,10 +1,13 @@
 @media(max-width:900px){
+    .infos-filme p {
+        width: 320px;
+    }
+    
     .lista-filmes {
         max-width: 800px;
     }
 
     .lista-filmes img {
-        width: 320px;
         max-width: 320px;
     }
 
@@ -21,7 +24,6 @@
     }
 
     .infos-filme img {
-        width: 320px;
         max-width: 320px;
     }
 
@@ -34,11 +36,11 @@
     }
 
     .infos-filme p {
-        width: 320px;
+        max-width: 320px;
     }
 
     .filmes-favoritos ul {
-        width: 320px;
+        max-width: 320px;
     }
 
 

@@ -8,7 +8,7 @@
 
 .infos-filme img{
     width: 900px;
-    max-width: 100%;
+    /* max-width: 100%; */
     object-fit: contain ;
 }
 
