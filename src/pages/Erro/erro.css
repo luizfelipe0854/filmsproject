@@ -1,0 +1,30 @@
+.error-box{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-box h1{
+    font-size: 120px;
+    font-weight: bold;
+    margin: 0;
+    color: brown;
+    text-align: center;
+}
+
+.error-box h2{
+    margin: 0;
+    color: brown;
+}
+
+.error-box a{
+    text-decoration: none;
+    margin-top: 15px;
+    background-color: brown;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+}

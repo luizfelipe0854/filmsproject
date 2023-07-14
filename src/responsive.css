@@ -1,0 +1,45 @@
+@media(max-width:900px){
+    .lista-filmes {
+        max-width: 800px;
+    }
+
+    .lista-filmes img {
+        width: 320px;
+        max-width: 320px;
+    }
+
+    .lista-filmes a {
+        width: 320px;
+    }
+
+    .lista-filmes h1 {
+        font-size: 0.9em;
+    }
+
+    .infos-filme h1 {
+        font-size: 0.9em;
+    }
+
+    .infos-filme img {
+        width: 320px;
+        max-width: 320px;
+    }
+
+    .infos-filme strong {
+        font-size: 12px;
+    }
+
+    .infos-filme h3 {
+        font-size: 0.8em;
+    }
+
+    .infos-filme p {
+        width: 320px;
+    }
+
+    .filmes-favoritos ul {
+        width: 320px;
+    }
+
+
+}
