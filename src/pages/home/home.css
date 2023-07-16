@@ -43,7 +43,7 @@
     justify-content: space-evenly;
 }
 
-.lista-filmes h3{
+.container h3{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,4 +60,24 @@
 .button-search button:hover{
     background-color: brown;
     color: white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){   
+    .lista-filmes {
+        max-width: 800px;
+    }
+
+    .lista-filmes img {
+        max-width: 320px;
+    }
+
+    .lista-filmes a {
+        width: 320px;
+    }
+
+    .lista-filmes h1 {
+        font-size: 0.9em;
+    }
 }

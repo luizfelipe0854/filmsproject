@@ -3,7 +3,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 
 import "./filme.css"
-import "../../responsive.css"
 import api from "../../services/api";
 
 

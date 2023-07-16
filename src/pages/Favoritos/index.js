@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 
 
 import "./favoritos.css";
-import "../../responsive.css"
 
 function Favoritos() {
     

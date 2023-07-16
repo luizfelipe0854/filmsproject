@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./home.css";
-import "../../responsive.css"
 
 import api from "../../services/api";
 
@@ -26,13 +25,13 @@ function Home() {
 
   return (
     <div className="container">
-      <div className="lista-filmes">
-        <h3>Selecione o tipo de busca:</h3>
+      <h3>Selecione o tipo de busca:</h3>
         <div className="button-search">
           <button onClick={()=> {setTipo("upcoming")}}>Em cartaz</button>
           <button onClick={()=> {setTipo("top_rated")}}>Melhores Avaliados</button>
           <button onClick={()=> {setTipo("popular")}}>Populares</button>
         </div>
+      <div className="lista-filmes">
         {filmes.map((item) => (
           <article key={item.id}>
             <h1>{item.title}</h1>
