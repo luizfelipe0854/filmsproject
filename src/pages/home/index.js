@@ -8,10 +8,11 @@ import api from "../../services/api";
 
 function Home() {
   const [filmes, setFilmes] = useState([]);
+  const [tipo,setTipo] = useState("upcoming");
 
   useEffect(() => {
     async function loadFilmes() {
-      const response = await api.get("/movie/upcoming", {
+      const response = await api.get(`/movie/${tipo}`, {
         params: {
           api_key: "9158248058702e442b86003f222df955",
           language: "pt-BR",
@@ -21,11 +22,17 @@ function Home() {
       setFilmes(response.data.results.slice(0, 10));
     }
     loadFilmes();
-  }, []);
+  }, [tipo]);
 
   return (
     <div className="container">
       <div className="lista-filmes">
+        <h3>Selecione o tipo de busca:</h3>
+        <div className="button-search">
+          <button onClick={()=> {setTipo("upcoming")}}>Em cartaz</button>
+          <button onClick={()=> {setTipo("top_rated")}}>Melhores Avaliados</button>
+          <button onClick={()=> {setTipo("popular")}}>Populares</button>
+        </div>
         {filmes.map((item) => (
           <article key={item.id}>
             <h1>{item.title}</h1>
